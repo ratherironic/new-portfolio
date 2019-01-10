@@ -1,0 +1,46 @@
+.panel-home {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+.homepage-art {
+    bottom: 0;
+    position: fixed;
+    left: 50%;
+    @include transform(translate(-50%, 0%));
+    .desk,
+    .chair {
+        bottom: 0px;
+        // opacity: 0;
+        position: absolute;
+        width: 20rem;
+        @include transform(translate(1000%, 0%) scale(1));
+        @include transition(transform 0.8s ease);
+    }
+    .desk {
+        width: 40rem;
+        @include transition(transform 1.2s ease 0.2s);
+    }
+}
+.firstPanel {
+    // slide chair in to center of screen
+    .homepage-art {
+        .chair {
+            @include transform(translate(-50%, 0%));
+        }
+        .desk {
+            @include transform(translate(-50%, 0%) scale(1));
+            @include transition(transform 0.8s ease 0s);
+        }
+    }
+}
+.secondPanel {
+    .homepage-art {
+        .chair {
+            @include transform(translate(-500%, 0%));
+        }
+        .desk {
+            @include transform(scale(19));
+        }
+    }
+}

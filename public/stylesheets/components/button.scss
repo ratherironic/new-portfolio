@@ -1,0 +1,32 @@
+.btn {
+    background-color: #CE694C;
+    border-radius: 10px;
+    border: 0px;
+    color: #fff;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    @include scale(1);
+    @include transition(transform 0.4s ease);
+    &:after {
+        background-color: rgba(239, 142, 120, 0.6);
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        top: 50%;
+        left: 50%;
+        mix-blend-mode: screen;
+        @include transform(translate(-50%, -50%));
+        @include transition(height 0.4s ease, width 0.4s ease);
+    }
+    &:hover {
+        @include scale(0.8);
+        &:after { 
+            height: 200%;
+            width: 200%;
+        }
+    }
+}
+  

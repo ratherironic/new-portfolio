@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Press+Start+2P|VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row container header-holder">
+          <header class="col-xs-12 header">
+            <div class="col-md-10 col-xs-12 vcenter">
+                <h1>Matthew Gordon</h1>
+                <p>Developer. | Creative. | Not the worst.</p>
+            </div>
+            <div class="col-md-2 col-xs-12 row vcenter">
+              <a class="btn col-xs-12 align-self-end" href="mailto:ratherironic@gmail.com">Let's work together!</a>
+            </div>
+          </header>  
+        </div>
+
+        <div class="panel-holder">
+          <div class="panel panel-home">
+            <div class="panel-content">
+              <div class="row">
+                <div class="col-md-4 col-sx-12 flyout" >
+                  <h2 class="intro-label">Hi I'm Matt Gordon!<br/>I build websites.</h2>
+                  <h2>I'm available!</h2>
+                  <p>So if you are hiring freelance or full time:</p>
+                  <div class="row">
+                    <a class="btn col-md-5 col-xs-10 align-self-end" href="/docs/Matthew Gordon Resume.pdf" target="_blank">Check out my Resume!</a>
+                    <a class="btn col-md-5 col-xs-10 align-self-end" href="mailto:ratherironic@gmail.com" target="_blank">Email me!</a>
+                  </div>
+                </div>
+                <!-- <div class="col-md-4 offset-md-4 col-sx-12 flyout flyout-right" >
+                  <h2>I'm available!</h2>
+                  <p>So if you are hiring freelance or full time:</p>
+                  <div class="row">
+                    <a class="btn col-md-5 col-xs-12 align-self-end" href="/docs/Matthew Gordon Resume.pdf" target="_blank">Check out my Resume!</a>
+                    <a class="btn col-md-5 col-xs-12 align-self-end" href="mailto:ratherironic@gmail.com" target="_blank">Email me!</a>
+                  </div>
+                   <small>They're all good. This one is mine. Like my own personal showroom where I am the proverbial puppy in the window and you're the young child with a nose pressed up to the window smudging the glass. Only I'm not a puppy. I'm a guy wearing a hoodie that needs to be washed and you're a someone looking to hire a developer/creative and have to read thousands of portfolios.</small>
+                </div> -->
+                <div class="homepage-art">
+                    <img src="images/desk.svg" role="presentation" class="desk" />       
+                    <img src="images/chair.svg" role="presentation" class="chair" />      
+                </div>         
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-skills" id="skills-scene">
+            <div class="row panel-content-holder">
+              <div class="col-sx-12 skills-header">
+                  <div class="col-xs-11">
+                    <h1><span>Skills</span></h1>
+                  </div>
+                  <div class="col-xs-1">
+                    <div class="fake-close-button"></div>
+                  </div>
+              </div>
+              <div class="panel-content">
+                <div class="row no-margin">
+                  <div class="col-md-8 col-xs-12 ui-box skill-intro">
+                    <h3>Do I have the skills to pay the bills?</h3> 
+          
+                    <p>Yes. I do. They pay the bills so well I could leave the lights on in my apartment for like a week and not even worry about it. I wont because that's a waste but that's not the point. <br/>The point is they can. Here are some of my skills:</p>
+                  </div>
+                </div>
+                <div class="skill-listing ui-box">
+                    <dl class="row">
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-100">
+                          <dd class="col-xs-12 vcenter">HTML</dd>
+                          <dt  class="col-xs-12 vcenter">100%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-100">
+                          <dd class="col-xs-12 vcenter">CSS/SASS</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="100">100%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-90">
+                          <dd class="col-xs-12 vcenter">Javascript</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="90">90%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-80">
+                          <dd class="col-xs-12 vcenter">React</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="80">80%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-60">
+                          <dd class="col-xs-12 vcenter">Vue</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="60">60%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-100">
+                          <dd class="col-xs-12 vcenter">jQuery</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="100">100%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-85">
+                          <dd class="col-xs-12 vcenter">Node.js</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="85">85%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-80">
+                          <dd class="col-xs-12 vcenter">Express</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="80">80%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-90">
+                          <dd class="col-xs-12 vcenter">PHP</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="90">90%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-90">
+                          <dd class="col-xs-12 vcenter">Wordpress</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="90">90%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-70">
+                          <dd class="col-xs-12 vcenter">UX</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="70">70%</dt>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="skill-tile row align-items-center percent-100">
+                          <dd class="col-xs-12 vcenter">Facial Hair</dd>
+                          <dt  class="col-xs-12 vcenter" d-value="100">100%</dt>
+                        </div>
+                      </div>
+                    </dl>
+                </div>
+                <div class="row no-margin">
+                  <div class="col-md-8 col-xs-12 ui-box skill-intro">
+                      <h3>Past Projects</h3>
+                      <p>If the beautiful example of web development that is this site doesn't convince you that I rule, check out these other fine sites I've worked on!</p>
+                  </div>
+                </div>
+                <div class="row work-tiles">
+                    <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/capitalnature.png" class="work-tile-image" alt="Capital Nature" />
+                      <h5>Capital Nature</h5>
+                    </div>
+                    <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/tgifridays.png" class="work-tile-image" alt="TGI Fridays" />
+                      <h5>TGI Fridays</h5>
+                    </div>
+                    <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/gevalia.png" class="work-tile-image" alt="Gevalia Coffee Experience" />
+                      <h5>Gevalia Coffee Experience</h5>
+                    </div>
+                    <div class="col-md-4 col-xs-12 work-tile ui-box">
+                        <img src="images/work/piecestech.png" class="work-tile-image" alt="Pieces Tech" />
+                      <h5>Pieces Tech</h5>
+                    </div>
+                    <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>Vail Epic Mix</h5>
+                    </div>
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>49ers</h5>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>JCP</h5>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>Cheermagedon</h5>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>Aspen Dental</h5>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>American Express Open Forum</h5>
+                    </div> -->
+                    <!-- <div class="col-md-4 col-xs-12 work-tile ui-box">
+                      <img src="images/work/epicmix.png" class="work-tile-image" alt="Epic Mix" />
+                      <h5>TGI Friday Breadsticks Around the World</h5>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+
+        </div>
+    </div>
+  </body>
+  <script src="/anime/anime.min.js"></script>
+  <script src="/javascripts/main.js"></script>  
+</html>

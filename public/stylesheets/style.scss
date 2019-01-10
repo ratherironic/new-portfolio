@@ -1,0 +1,63 @@
+// define colors
+$lightGreen: #E2FCB9;
+$darkGreen: #79A328;
+$darkBlue: #0A3556;
+$orange: #EA8A0A;
+$lightBrown: #CCB49E;
+$darkBrown: #663A1C;
+$red: #F74D4D;
+$lightBlue: #4195BF;
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@import './components/resets.scss';
+@import './components/fonts.scss';
+@import './components/header.scss';
+@import './components/button.scss';
+@import './components/flyout.scss';
+@import './components/skill-tiles.scss';
+
+@import './components/home.scss';
+@import './components/skills.scss';
+

@@ -1,0 +1,189 @@
+.panel-skills {
+    .skill-tile {
+        margin: 0;
+        overflow: hidden;
+        padding: 0.5rem;
+        dt {
+            border: solid 0.5rem #000;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            position: relative;
+            padding: 0.35rem 0.35rem 0.15rem;
+            &:after {
+                border-left: solid 0.5rem #000;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 4rem;
+                width: 0%;
+                background: url('/images/checkers.svg') repeat 0 0 #000;
+                background-size: 0.5rem;
+                height: 1.3rem;
+                @include transition(width 0.4s ease);
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 4rem;
+                width: 0%;
+                background-blend-mode: darken;
+                height: 1.3rem;
+                z-index: 1;
+                @include transition(width 0.4s ease);
+            }
+        }
+        &.percent-100 {
+            dt {
+                &:before {
+                    background: rgba(51, 122, 183, 0.8);
+                }
+            }
+        }
+        &.percent-95 {
+            dt {
+                &:before {
+                    background: rgba(51, 122, 183, 0.4);
+                }
+            }
+        }
+        &.percent-90 {
+            dt {
+                &:before {
+                    background: rgba(60, 118, 61, 0.8);
+                }
+            }
+        }
+        &.percent-85 {
+            dt {
+                &:before {
+                    background: rgba(60, 118, 61, 0.4);
+                }
+            }
+        }
+        &.percent-80 {
+            dt {
+                &:before {
+                    background: rgba(252, 248, 227, 0.8);
+                }
+            }
+        }
+        &.percent-75 {
+            dt {
+                &:before {
+                    background: rgba(252, 248, 227, 0.4);
+                }
+            }
+        }
+        &.percent-70 {
+            dt {
+                &:before {
+                    background: rgba(169, 68, 66, 0.8);
+                }
+            }
+        }
+        &.percent-65 {
+            dt {
+                &:before {
+                    background: rgba(169, 68, 66, 0.4);
+                }
+            }
+        }
+
+        &.active {
+            &.percent-100 {
+                dt {
+                    &:after {
+                        width: calc(100% - 4rem);
+                    }
+                    &:before {
+                        width: calc(100% - 4rem);
+                    }
+                }
+            }
+            &.percent-95 {
+                dt {
+                    &:after {
+                        width: calc(95% - 4rem);
+                    }
+                    &:before {
+                        width: calc(95% - 4rem);
+                    }
+                }
+            }
+            &.percent-90 {
+                dt {
+                    &:after {
+                        width: calc(90% - 4rem);
+                    }
+                    &:before {
+                        width: calc(90% - 4rem);
+                    }
+                }
+            }
+            &.percent-85 {
+                dt {
+                    &:after {
+                        width: calc(85% - 4rem);
+                    }
+                    &:before {
+                        width: calc(85% - 4rem);
+                    }
+                }
+            }
+            &.percent-80 {
+                dt {
+                    &:after {
+                        width: calc(80% - 4rem);
+                    }
+                    &:before {
+                        width: calc(80% - 4rem);
+                    }
+                }
+            }
+            &.percent-75 {
+                dt {
+                    &:after {
+                        width: calc(75% - 4rem);
+                    }
+                    &:before {
+                        width: calc(75% - 4rem);
+                    }
+                }
+            }
+            &.percent-70 {
+                dt {
+                    &:after {
+                        width: calc(70% - 4rem);
+                    }
+                    &:before {
+                        width: calc(70% - 4rem);
+                    }
+                }
+            }
+            &.percent-65 {
+                dt {
+                    &:after {
+                        width: calc(65% - 4rem);
+                    }
+                    &:before {
+                        width: calc(65% - 4rem);
+                    }
+                }
+            }
+            &.percent-60 {
+                dt {
+                    &:after {
+                        width: calc(60% - 4rem);
+                    }
+                    &:before {
+                        width: calc(60% - 4rem);
+                    }
+                }
+            }
+        }
+    }
+}
