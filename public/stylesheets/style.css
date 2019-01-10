@@ -143,7 +143,7 @@ h5 {
   color: #fff;
   padding: 1rem;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: -150%;
   z-index: 10;
   -webkit-transform: translate(0%, -50%);
@@ -155,6 +155,9 @@ h5 {
   -ms-transition: left 0.4s ease 0s;
   -o-transition: left 0.4s ease 0s;
   transition: left 0.4s ease 0s; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .flyout {
+      top: 50%; } }
   .flyout h2 {
     font-size: 2.3rem;
     text-transform: uppercase; }
@@ -291,8 +294,7 @@ h5 {
 
 .panel-home {
   display: block;
-  height: 100vh;
-  width: 100vw; }
+  height: 100vh; }
 
 .homepage-art {
   bottom: 0;
