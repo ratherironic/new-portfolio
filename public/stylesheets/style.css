@@ -141,7 +141,7 @@ h5 {
 .flyout {
   background: rgba(7, 38, 56, 0.85);
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: absolute;
   top: 60%;
   left: -150%;
@@ -231,7 +231,7 @@ h5 {
       top: 0;
       left: 4rem;
       width: 0%;
-      background-blend-mode: darken;
+      mix-blend-mode: screen;
       height: 1.3rem;
       z-index: 1;
       -webkit-transition: width 0.4s ease;
@@ -374,7 +374,7 @@ h5 {
     border: solid 0.25rem #000;
     border-radius: 0.5rem; }
   .panel-skills .panel-content {
-    background: #000;
+    background: #fff;
     border: solid 0.25rem #fff;
     padding: 1rem; }
   .panel-skills h1,
@@ -414,7 +414,7 @@ h5 {
         z-index: 10; }
     .panel-skills .skills-header .fake-close-button {
       background: #fff;
-      border: solid 0.5rem #000;
+      border: solid 0.25rem #000;
       outline: solid 0.5rem #fff;
       height: 2rem;
       width: 2rem;
@@ -422,7 +422,9 @@ h5 {
       z-index: 10;
       position: relative;
       margin-bottom: 0.5rem;
-      margin-top: 0.25rem; }
+      margin-top: 0.25rem;
+      float: right;
+      border-radius: 0.25rem; }
   .panel-skills .skill-intro {
     margin-bottom: 1rem;
     padding: 0.5rem 2rem; }

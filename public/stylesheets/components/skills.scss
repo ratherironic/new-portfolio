@@ -11,7 +11,7 @@
         border-radius: 0.5rem;
     }
     .panel-content {
-        background: #000;
+        background: #fff;
         border: solid 0.25rem #fff;
         padding: 1rem;
     }
@@ -73,7 +73,7 @@
         }
         .fake-close-button {
             background: #fff;
-            border: solid 0.5rem #000;
+            border: solid 0.25rem #000;
             outline: solid 0.5rem #fff;
             height: 2rem;
             width: 2rem;
@@ -83,6 +83,7 @@
             margin-bottom: 0.5rem;
             margin-top: 0.25rem;
             float: right;
+            border-radius: 0.25rem;
         }
     }
     .skill-intro {
