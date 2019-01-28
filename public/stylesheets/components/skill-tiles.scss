@@ -39,35 +39,35 @@
         &.percent-100 {
             dt {
                 &:before {
-                    background: rgba(51, 122, 183, 0.8);
+                    background: rgba(44, 245, 0, 0.8);
                 }
             }
         }
         &.percent-95 {
             dt {
                 &:before {
-                    background: rgba(51, 122, 183, 0.4);
+                    background: rgba(95, 255, 185, 0.8);
                 }
             }
         }
         &.percent-90 {
             dt {
                 &:before {
-                    background: rgba(60, 118, 61, 0.8);
+                    background: rgba(95, 255, 185, 0.8);
                 }
             }
         }
         &.percent-85 {
             dt {
                 &:before {
-                    background: rgba(60, 118, 61, 0.4);
+                    background: rgba(128, 82, 255, 0.8);
                 }
             }
         }
         &.percent-80 {
             dt {
                 &:before {
-                    background: rgba(252, 248, 227, 0.8);
+                    background: rgba(31, 230, 255, 0.8);
                 }
             }
         }
