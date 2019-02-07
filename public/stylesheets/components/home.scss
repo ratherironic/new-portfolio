@@ -16,10 +16,16 @@
         width: 20rem;
         @include transform(translate(1000%, 0%) scale(1));
         @include transition(transform 0.8s ease);
+        @media (min-width: 12450px) {
+            width: 30rem;
+        }
     }
     .desk {
         width: 40rem;
         @include transition(transform 1.2s ease 0.2s);
+        @media (min-width: 12450px) {
+            width: 50rem;
+        }
     }
 }
 .firstPanel {

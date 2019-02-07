@@ -88,7 +88,8 @@ h5 {
   margin-bottom: 0; }
   .secondPanel .header-holder header h1,
   .secondPanel .header-holder header p {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 0; }
   .secondPanel .header-holder header h1 {
     font-size: 1rem;
     margin-right: 1rem; }
@@ -207,7 +208,7 @@ h5 {
     font-size: 0.85rem;
     margin-top: 0.5rem;
     position: relative;
-    padding: 0.35rem 0.35rem 0.15rem; }
+    padding: 0.25rem 0.35rem 0.25rem; }
     .panel-skills .skill-tile dt:after {
       border-left: solid 0.5rem #000;
       content: '';
@@ -318,6 +319,10 @@ h5 {
     -ms-transition: transform 0.8s ease;
     -o-transition: transform 0.8s ease;
     transition: transform 0.8s ease; }
+    @media (min-width: 12450px) {
+      .homepage-art .desk,
+      .homepage-art .chair {
+        width: 30rem; } }
   .homepage-art .desk {
     width: 40rem;
     -webkit-transition: transform 1.2s ease 0.2s;
@@ -325,6 +330,9 @@ h5 {
     -ms-transition: transform 1.2s ease 0.2s;
     -o-transition: transform 1.2s ease 0.2s;
     transition: transform 1.2s ease 0.2s; }
+    @media (min-width: 12450px) {
+      .homepage-art .desk {
+        width: 50rem; } }
 
 .firstPanel .homepage-art .chair {
   -webkit-transform: translate(-50%, 0%);
@@ -374,8 +382,7 @@ h5 {
     border-radius: 0.5rem;
     box-shadow: 10px 10px rgba(51, 51, 51, 0.59); }
   .panel-skills .panel-content {
-    background: #fff;
-    border: solid 0.25rem #fff;
+    background: #ecf3f9;
     padding: 1rem; }
   .panel-skills h1 {
     font-size: 1.45rem;
@@ -433,6 +440,20 @@ h5 {
 
 .work-tiles {
   padding: 0 1rem; }
+  .work-tiles .work-tile-content {
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0px 5px 12px #a9c0d4;
+    padding: 1rem 0.5rem;
+    border-radius: 0.25rem; }
+    .work-tiles .work-tile-content .description {
+      font-weight: bold;
+      margin-bottom: 0.5rem; }
+  .work-tiles a,
+  .work-tiles span {
+    display: block;
+    margin-bottom: 1rem; }
   .work-tiles h5 {
     font-size: 1.2rem;
     font-weight: 900; }
@@ -486,5 +507,14 @@ h5 {
   -ms-transform: translate(0%, 0%) scale(1);
   transform: translate(0%, 0%) scale(1);
   opacity: 1; }
+
+.skill-section {
+  background: #fff;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0px 5px 12px #a9c0d4;
+  padding: 1rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 4rem; }
 
 /*# sourceMappingURL=style.css.map */
